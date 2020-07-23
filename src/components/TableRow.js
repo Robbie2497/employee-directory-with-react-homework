@@ -1,14 +1,23 @@
 import React from "react";
 
+
 export const TableRow = (props) => {
 
-        return (
-            <tr>
-                <td>{props.firstName} </td>
-                <td>{props.lastName} </td>
-                <td>{props.phoneNumber} </td>
-                <td>{props.email} </td>
-                <td>{props.picture} </td>
-            </tr>
-        )
+    return (
+        <table class="table">
+         
+            <tbody>
+                <tr>
+                    <td>{props.name.first}</td>
+                    <td>{props.name.last} </td>
+                    <td>{props.dob.age}</td>
+                    <td>{props.phone}</td>
+                    <td>{props.email}</td>
+                    <td><img src={props.picture.medium} alt="" /> </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    )
 }
