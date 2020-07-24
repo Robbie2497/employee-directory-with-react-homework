@@ -5,7 +5,7 @@ export const TableHead = () => {
     return (
 
 
-        <thead>
+
 <tr>
   <th>First Name</th>
   <th>Last Name</th>
@@ -14,7 +14,7 @@ export const TableHead = () => {
   <th>Email</th>
   <th>Photo</th>
 </tr>
-</thead>
+
 
 
     )

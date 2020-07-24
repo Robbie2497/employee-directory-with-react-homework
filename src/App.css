@@ -38,10 +38,10 @@
 }
 
 .scroll {
-  width: 99%;
+  width: 300px;
   height: 500px;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   text-align: left;
   padding: 20px;
 }
@@ -56,5 +56,5 @@ border: none;
 }
 
 .headSpacing {
-  margin-left: 50px;
+
 }

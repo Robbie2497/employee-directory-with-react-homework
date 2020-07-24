@@ -92,25 +92,33 @@ const Table = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-sm-6"></div>
-                <div className="col-sm-3">
-                <button className="btn btn-secondary" onClick={sort} >Click here to sort by age</button>
+                <div className="col-sm-12">
+<h1>Welcome to the Employee Directory</h1>
                 </div>
-                <div className="col-sm-3">
+            </div>
+            <br />
+            <br />
+
+            <div className="row">
+                <div className="col-sm-8">
+
+                    <table>
+                        <thead>
+                            <TableHead />
+                        </thead>
+
+                        {users.map(user => <TableRow key={user.id.value} {...user} />)}
+
+                    </table>
+                </div>
+                <div className="col-sm-2">
+                    <button className="btn btn-secondary" onClick={sort} >Sort by age</button>
+                </div>
+                <div className="col-sm-1">
                     <StateDropDown title="Filter by state" items={items} />
                 </div>
             </div>
-
-
-            <table>
-                <thead>
-                    <TableHead />
-                </thead>
-                <tbody>
-                    {users.map(user => <TableRow key={user.id.value} {...user} />)}
-                </tbody>
-            </table>
-            </div>
+        </div>
 
     )
 }

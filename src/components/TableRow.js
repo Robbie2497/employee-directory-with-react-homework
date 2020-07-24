@@ -1,11 +1,10 @@
 import React from "react";
 
 
+
 export const TableRow = (props) => {
 
     return (
-        <table class="table">
-         
             <tbody>
                 <tr>
                     <td>{props.name.first}</td>
@@ -16,8 +15,5 @@ export const TableRow = (props) => {
                     <td><img src={props.picture.medium} alt="" /> </td>
                 </tr>
             </tbody>
-        </table>
-
-
     )
 }

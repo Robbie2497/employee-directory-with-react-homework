@@ -37,7 +37,7 @@ import React, {useState} from 'react';
         onClick={() => toggle(!open)}
         >
             <div>
-                <p className="btn btn-secondary dropdown-toggle">{open ? 'Close' : 'Click here to filter by location'}</p>
+                <p className="btn btn-secondary dropdown-toggle">{open ? 'Close' : 'Filter by location'}</p>
             </div>
             {open && (
                 <ul className="scroll list-group" >
